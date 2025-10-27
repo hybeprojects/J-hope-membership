@@ -166,8 +166,7 @@
       transform: translateX(100%);
     }
 
-    #vip-full:checked + label,
-    #vip-installment:checked + label {
+    .toggle-option input:checked + .plan-title {
       color: var(--accent-color);
       font-weight: 600;
     }
@@ -275,14 +274,14 @@
       <div class="membership-box">
         <h3>VIP Membership Options</h3>
         <div class="toggle-group">
-          <input type="radio" id="vip-full" name="vip-plan" value="Full Payment - $1278.89/year" checked />
-          <label for="vip-full" class="toggle-option">
+          <label class="toggle-option">
+            <input type="radio" id="vip-full" name="vip-plan" value="Full Payment - $1278.89/year" checked />
             <span class="plan-title">Full Payment</span>
             <span class="plan-price">$1,278.89 / year</span>
           </label>
 
-          <input type="radio" id="vip-installment" name="vip-plan" value="Installment - $670.45/half-year" />
-          <label for="vip-installment" class="toggle-option">
+          <label class="toggle-option">
+            <input type="radio" id="vip-installment" name="vip-plan" value="Installment - $670.45/half-year" />
             <span class="plan-title">Installment</span>
             <span class="plan-price">$670.45 / half-year</span>
           </label>
